@@ -15,6 +15,8 @@ function Blob(x, y, r) {
   }
 
   this.eat = function() {
+
+
   }
 
   this.show = function() {

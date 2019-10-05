@@ -6,12 +6,12 @@ function setup() {
   curWinHeight = windowHeight;
   createCanvas(windowWidth, windowHeight);
   myBlob = new Blob(250, 250, 200);
-  for (i = 0; i < 100; i++) {
+  /*for (i = 0; i < 100; i++) {
     var x = random(-width, width);
     var y = random(-height, height);
     var r = random(10, 25);
     blobs[i] = new Blob(x, y, r);
-  }
+  }*/
 }
 
 function draw() {
