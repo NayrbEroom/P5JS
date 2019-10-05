@@ -6,14 +6,15 @@ function Blob(x, y, r) {
 
 
   this.pos = createVector(x, y);
+  this.vel = createVector(0,0);
   this.r = r;
 
   this.move = function() {
-    
+    this.pos.x = this.vel.x;
+    this.pos.y = this.vel.y;
   }
 
   this.eat = function() {
-
   }
 
   this.show = function() {
