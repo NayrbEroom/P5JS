@@ -6,6 +6,7 @@ function setup() {
   curWinHeight = windowHeight;
   createCanvas(windowWidth, windowHeight);
   myBlob = new Blob(250, 250, 200);
+  console.log(myBlob.pos);
   /*for (i = 0; i < 100; i++) {
     var x = random(-width, width);
     var y = random(-height, height);
@@ -21,14 +22,6 @@ function draw() {
     //console.log("resized");
   }*/
   myBlob.show();
-  myBlob.move();
-
-  for (i = 0; i < 100; i++) {
-    blobs[i].show();
-  }
-
-
-
-
+  myBlob.update();
 
 }
