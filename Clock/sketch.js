@@ -1,25 +1,30 @@
+let dayArc = arc();
+let hourArc = arc();
+let minuteArc = arc();
+let secondArc = arc();
 
-curWinWidth = windowWidth;
-curWinHeight = windowHeight;
 
 function setup() {
-
-
     createCanvas(windowWidth, windowHeight);
+    console.log("Start success");
+    let d = day();
+    let h = hour();
+    let m = minute();
+    let s = second();
 
+    console.log("I've received the time");
 
-
-    console.log
 }
 
 function draw() {
   background(51);
-
-  if (curWinWidth != windowWidth) {
-    if (curWinHeight != windowHeight) {
-      createCanvas(windowWidth, windowHeight);
-      }
-    }
+  arc(250, 250, 50, 50, 0, 0);
 
 
+
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  console.log("Resized");
 }
