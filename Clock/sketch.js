@@ -1,7 +1,4 @@
-let dayArc = arc();
-let hourArc = arc();
-let minuteArc = arc();
-let secondArc = arc();
+
 
 
 function setup() {
@@ -18,8 +15,17 @@ function setup() {
 
 function draw() {
   background(51);
-  arc(250, 250, 50, 50, 0, 0);
 
+  let midScreenX = windowWidth/2;
+  let midScreenY = windowHeight/2;
+  let dayArc = arc(midScreenX, midScreenY, 50, 50, 0, 0);
+  fill(10);
+  let hourArc = arc(midScreenX, midScreenY, 100, 100, 0, 0);
+  fill(20);
+  let minuteArc = arc(midScreenX, midScreenY, 150, 150, 0, 0);
+  fill(30);
+  let secondArc = arc(midScreenX, midScreenY, 200, 200, 0, 0);
+  fill(40);
 
 
 }
