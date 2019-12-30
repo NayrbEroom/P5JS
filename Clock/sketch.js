@@ -19,13 +19,13 @@ function draw() {
   let midScreenX = windowWidth/2;
   let midScreenY = windowHeight/2;
   let dayArc = arc(midScreenX, midScreenY, 50, 50, 0, 0);
-  fill(10);
+  nofill();
   let hourArc = arc(midScreenX, midScreenY, 100, 100, 0, 0);
-  fill(20);
+  nofill();
   let minuteArc = arc(midScreenX, midScreenY, 150, 150, 0, 0);
-  fill(30);
+  nofill();
   let secondArc = arc(midScreenX, midScreenY, 200, 200, 0, 0);
-  fill(40);
+  nofill();
 
 
 }
