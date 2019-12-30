@@ -10,7 +10,7 @@ function setup() {
     let s = second();
 
     console.log("I've received the time");
-    console.log("TEST");
+    
 
 }
 
